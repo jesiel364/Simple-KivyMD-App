@@ -5,7 +5,7 @@ from kivy.uix.boxlayout import BoxLayout
 
 
 Window.size = 300, 500
-class mostrar_texto(MDApp):
+class index(MDApp):
     def build(self):
         self.theme_cls.primary_pallete = 'Dark_Blue'
         self.theme_cls.theme_style = 'Dark'
@@ -20,4 +20,4 @@ class mostrar_texto(MDApp):
 
 
 if __name__ == '__main__':
-    mostrar_texto().run()
+    index().run()
