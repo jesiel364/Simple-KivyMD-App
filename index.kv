@@ -1,0 +1,23 @@
+FloatLayout:
+
+    MDLabel:
+        id: title
+        text: 'Nome'
+        font_style: 'H4'
+        size_hint: .5, .2
+        pos_hint: {'center_x': .5, 'center_y': .8}
+        adaptive: True
+        align: 'center'
+
+    MDTextField:
+        id: field
+        hint_text: 'Digite algo'
+        pos_hint: {'center_x': .5, 'center_y': .6}
+        size_hint: .7, .15
+        color: (124/255, 164/255, 215/255,1)
+
+    MDFillRoundFlatButton:
+        text: 'Mudar'
+        pos_hint: {'center_x': .5, 'center_y': .4}
+        size_hint: .7, None
+        on_release: app.mudar_texto()
